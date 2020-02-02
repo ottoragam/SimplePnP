@@ -3561,7 +3561,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D6" library="adafruit" deviceset="LED" device="CHIPLED_1206"/>
 <part name="D7" library="adafruit" deviceset="LED" device="CHIPLED_1206"/>
 <part name="D8" library="adafruit" deviceset="LED" device="CHIPLED_1206"/>
-<part name="P1" library="jst-ph" deviceset="JST-PH2" device=""/>
+<part name="PWR" library="jst-ph" deviceset="JST-PH2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3578,7 +3578,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="D6" gate="G$1" x="76.2" y="45.72"/>
 <instance part="D7" gate="G$1" x="86.36" y="45.72"/>
 <instance part="D8" gate="G$1" x="96.52" y="45.72"/>
-<instance part="P1" gate="G$1" x="12.7" y="55.88"/>
+<instance part="PWR" gate="G$1" x="12.7" y="53.34" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -3588,10 +3588,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="60.96" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <label x="58.42" y="63.5" size="1.778" layer="95"/>
-<pinref part="P1" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="55.88" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
 <junction x="60.96" y="60.96"/>
+<pinref part="PWR" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="55.88" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="COMMON" class="0">
@@ -3650,10 +3650,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="60.96" y1="40.64" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="40.64" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
 <junction x="60.96" y="40.64"/>
-<pinref part="P1" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="53.34" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <junction x="25.4" y="40.64"/>
+<pinref part="PWR" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="53.34" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -1,0 +1,1 @@
+Mosfet switch board for 12VDC vacuum pump. Solder the motor terminals directly to the PCB.

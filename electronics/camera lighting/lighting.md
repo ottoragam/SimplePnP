@@ -1,1 +1,1 @@
-LED carrier board for pick and place camera illumination.
+LED carrier board for pick and place camera illumination. 5V PWM input.

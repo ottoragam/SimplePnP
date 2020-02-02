@@ -479,14 +479,15 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.77" y="1.98" size="0.8" layer="25" rot="R180"/>
 <attribute name="VALUE" x="14.27" y="5.54" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="P1" library="jst-ph" package="JST-PH2" value="" x="17.75" y="1.75" smashed="yes" rot="MR0"/>
+<element name="PWR" library="jst-ph" package="JST-PH2" value="" x="17.75" y="1.75" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="5V">
 <contactref element="R1" pad="2"/>
-<contactref element="P1" pad="1"/>
-<wire x1="8.922" y1="1.25" x2="16.25" y2="1.25" width="0.25" layer="1"/>
-<wire x1="16.25" y1="1.25" x2="16.75" y2="1.75" width="0.25" layer="1"/>
+<contactref element="PWR" pad="2"/>
+<wire x1="18.75" y1="1.75" x2="17.5" y2="0.5" width="0.25" layer="1"/>
+<wire x1="17.5" y1="0.5" x2="9.672" y2="0.5" width="0.25" layer="1"/>
+<wire x1="9.672" y1="0.5" x2="8.922" y2="1.25" width="0.25" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="D8" pad="C"/>
@@ -503,7 +504,6 @@ design rules under a new name.</description>
 <vertex x="26" y="26"/>
 <vertex x="0" y="26"/>
 </polygon>
-<contactref element="P1" pad="2"/>
 <via x="2.75" y="7.25" extent="1-16" drill="0.3"/>
 <via x="3" y="16" extent="1-16" drill="0.3"/>
 <via x="16" y="23" extent="1-16" drill="0.3"/>
@@ -518,10 +518,12 @@ design rules under a new name.</description>
 <wire x1="22.237434375" y1="19.7625625" x2="23.249996875" y2="18.75" width="0.25" layer="1"/>
 <wire x1="23.249996875" y1="18.75" x2="23.25" y2="18.75" width="0.25" layer="1"/>
 <wire x1="23" y1="11.25" x2="23" y2="10" width="0.25" layer="1"/>
-<wire x1="19.7625625" y1="3.7625625" x2="18.75" y2="2.75" width="0.25" layer="1"/>
-<wire x1="18.75" y1="2.75" x2="18.75" y2="1.75" width="0.25" layer="1"/>
 <via x="10" y="3" extent="1-16" drill="0.3"/>
 <wire x1="11.25" y1="3" x2="10" y2="3" width="0.25" layer="1"/>
+<contactref element="PWR" pad="1"/>
+<wire x1="19.7625625" y1="3.7625625" x2="17.7625625" y2="3.7625625" width="0.25" layer="1"/>
+<wire x1="17.7625625" y1="3.7625625" x2="16.75" y2="2.75" width="0.25" layer="1"/>
+<wire x1="16.75" y1="2.75" x2="16.75" y2="1.75" width="0.25" layer="1"/>
 </signal>
 <signal name="COMMON">
 <contactref element="D2" pad="A"/>
