@@ -4277,6 +4277,21 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <vertex x="6.4262" y="-4.4196"/>
 </polygon>
 </package>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="XTAL">
@@ -4355,6 +4370,9 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <pin name="TIP" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
 <pin name="RING" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="RING_SW" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="DOT">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6094,6 +6112,20 @@ Source: http://www.osram.convergy.de/</description>
 <connect gate="G$1" pin="RING_SW" pad="GNDBREAK"/>
 <connect gate="G$1" pin="TIP" pad="PWR2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL">
+<description>For use by pick and place machines to calibrate the vision/machine, 1mm
+&lt;p&gt;By microbuilder.eu&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL_1MM">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8959,6 +8991,8 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="J1" library="adafruit" deviceset="2.1MMJACK" device="THM"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U$1" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$2" library="adafruit" deviceset="FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9042,6 +9076,8 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <instance part="J1" gate="G$1" x="88.9" y="93.98"/>
 <instance part="GND6" gate="1" x="246.38" y="33.02"/>
 <instance part="GND7" gate="1" x="254" y="55.88"/>
+<instance part="U$1" gate="G$1" x="116.84" y="121.92"/>
+<instance part="U$2" gate="G$1" x="124.46" y="121.92"/>
 </instances>
 <busses>
 </busses>

@@ -1,1 +1,1 @@
-Small form factor ATmega328p based GRBL booard and three TMC2209 stepper drivers for controlling the pick and place table motors. Needs two USB-UART converter cables like ones based around CH340 and CP2102 chips.
+Small form factor ATmega328p based GRBL booard. Connects to TMC2209 stepper driver board. For controlling the pick and place table motors. Needs two USB-UART converter cables like ones based around CH340 and CP2102 chips.

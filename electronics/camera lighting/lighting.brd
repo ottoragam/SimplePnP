@@ -170,8 +170,8 @@
 <circle x="24" y="24" radius="2" width="0.1" layer="39"/>
 <circle x="2" y="24" radius="2" width="0.1" layer="39"/>
 <circle x="2" y="2" radius="2" width="0.1" layer="39"/>
-<text x="14.5" y="2.75" size="1" layer="26" ratio="10" rot="MR270">5V</text>
-<text x="21" y="0.75" size="1" layer="26" ratio="10" rot="MR90">GND</text>
+<text x="14.5" y="2.75" size="1" layer="26" font="vector" ratio="10" rot="MR270">5V</text>
+<text x="21" y="0.75" size="1" layer="26" font="vector" ratio="10" rot="MR90">GND</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -215,6 +215,21 @@ chip</description>
 <rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
 <rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
 <rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+</package>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
 </package>
 </packages>
 </library>
@@ -444,42 +459,44 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="D1" library="adafruit" package="CHIPLED_1206" value="" x="21" y="5" smashed="yes" rot="R135">
-<attribute name="NAME" x="19.70395" y="5.5" size="0.8" layer="25" rot="R45"/>
+<attribute name="NAME" x="19.70395" y="5.5" size="0.8" layer="25" font="vector" rot="R45"/>
 <attribute name="VALUE" x="20.101971875" y="7.694075" size="1.27" layer="27" rot="R225"/>
 </element>
 <element name="D2" library="adafruit" package="CHIPLED_1206" value="" x="21" y="21" smashed="yes" rot="R225">
-<attribute name="NAME" x="20.5" y="19.70395" size="0.8" layer="25" rot="R135"/>
+<attribute name="NAME" x="20.5" y="19.70395" size="0.8" layer="25" font="vector" rot="R135"/>
 <attribute name="VALUE" x="18.305921875" y="20.101971875" size="1.27" layer="27" rot="R315"/>
 </element>
 <element name="D3" library="adafruit" package="CHIPLED_1206" value="" x="5" y="21" smashed="yes" rot="R315">
-<attribute name="NAME" x="6.296053125" y="20.5" size="0.8" layer="25" rot="R225"/>
+<attribute name="NAME" x="6.296053125" y="20.5" size="0.8" layer="25" font="vector" rot="R225"/>
 <attribute name="VALUE" x="5.898025" y="18.305921875" size="1.27" layer="27" rot="R45"/>
 </element>
 <element name="D4" library="adafruit" package="CHIPLED_1206" value="" x="5" y="5" smashed="yes" rot="R45">
-<attribute name="NAME" x="5.5" y="6.296053125" size="0.8" layer="25" rot="R315"/>
+<attribute name="NAME" x="5.5" y="6.296053125" size="0.8" layer="25" font="vector" rot="R315"/>
 <attribute name="VALUE" x="7.694075" y="5.898025" size="1.27" layer="27" rot="R135"/>
 </element>
 <element name="R1" library="adafruit" package="R1206" value="330" x="7.5" y="1.25" smashed="yes">
-<attribute name="NAME" x="6.853" y="2.393" size="0.8" layer="25"/>
+<attribute name="NAME" x="6.853" y="2.393" size="0.8" layer="25" font="vector"/>
 <attribute name="VALUE" x="6.103" y="-1.163" size="1.27" layer="27"/>
 </element>
 <element name="D5" library="adafruit" package="CHIPLED_1206" value="" x="23" y="13" smashed="yes" rot="R180">
-<attribute name="NAME" x="24.02" y="13.77" size="0.8" layer="25" rot="R270"/>
+<attribute name="NAME" x="24.02" y="13.77" size="0.8" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.46" y="14.27" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D6" library="adafruit" package="CHIPLED_1206" value="" x="13" y="23" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.48" y="24.02" size="0.8" layer="25"/>
+<attribute name="NAME" x="12.48" y="24.02" size="0.8" layer="25" font="vector"/>
 <attribute name="VALUE" x="11.73" y="20.46" size="1.27" layer="27"/>
 </element>
 <element name="D7" library="adafruit" package="CHIPLED_1206" value="" x="3" y="13" smashed="yes">
-<attribute name="NAME" x="1.98" y="12.23" size="0.8" layer="25" rot="R90"/>
+<attribute name="NAME" x="1.98" y="12.23" size="0.8" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="5.54" y="11.73" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="D8" library="adafruit" package="CHIPLED_1206" value="" x="13" y="3" smashed="yes" rot="R90">
-<attribute name="NAME" x="13.77" y="1.98" size="0.8" layer="25" rot="R180"/>
+<attribute name="NAME" x="13.77" y="1.98" size="0.8" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="14.27" y="5.54" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="PWR" library="jst-ph" package="JST-PH2" value="" x="17.75" y="1.75" smashed="yes" rot="MR0"/>
+<element name="U$1" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="2" y="18"/>
+<element name="U$2" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="24" y="8"/>
 </elements>
 <signals>
 <signal name="5V">
